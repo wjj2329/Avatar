@@ -1,0 +1,24 @@
+  body{
+    background-image: url("http://2.bp.blogspot.com/-gdW6fAyTw-E/UPrJ9if5ywI/AAAAAAAAAnI/odye3dsnISk/s1600/CFwhite.png");
+    background-size: 120%;
+  }
+.User-list {
+  list-style: none;
+}
+
+.Avatar {
+  text-align: center;  
+}
+
+.Avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border:solid;
+}
+
+.Avatar h4 {
+  text-shadow: 0 0 3px #FF0000;
+  text-transform: capitalize;
+  color: black;
+}
