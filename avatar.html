@@ -8,47 +8,8 @@
  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script >
-angular.module('app', [])
-  .controller('mainCtrl', mainCtrl)
-  .directive('avatar', avatarDirective);
 
-function mainCtrl ($scope) {
-
-  $scope.users = [];
-
-  $scope.addNew = function (user) {
-    $scope.users.push({ 
-      name: user.name,
-      avatarUrl: user.url
-    }); 
-    
-    user.name = ''; 
-    user.url = '';
-  };
-}
-
-function avatarDirective () {
-  return {
-    scope: {
-      user: '='  
-    },
-    restrict: 'E', 
-    template: (
-      '<div class="Avatar">' + '<img ng-src="{{user.avatarUrl}}" />' +'<h4>{{user.name}}</h4>' +
-      '</div>'
-    ), 
-    link: link
-  };
-  
-  function link (scope) { 
-    if (!scope.user.avatarUrl) {
-      scope.user.avatarUrl = 'http://thealmanac.org/assets/img/default_avatar.png';
-    }
-  }
-
-}
-</script>
+<script type="text/javascript" src="javascript.js"></script>
 
   <meta charset="utf-8">
   <title>User Avatar Maker</title>

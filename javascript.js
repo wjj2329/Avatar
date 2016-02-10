@@ -1,3 +1,4 @@
+
 angular.module('app', [])
   .controller('mainCtrl', mainCtrl)
   .directive('avatar', avatarDirective);
@@ -37,3 +38,4 @@ function avatarDirective () {
   }
 
 }
+
